@@ -448,6 +448,7 @@ address {
 .site-info {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .logo-line {
   display: inline-flex;
@@ -473,20 +474,21 @@ address {
   flex-direction: row;
   gap: 120px;
 }
-@media only screen and (min-width: 1158px) {
+@media (max-width: 767.98px) {
   .menu {
     display: none;
   }
 }
 .menu-contact {
   display: flex;
-  justify-content: flex-end;
   gap: 40px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
   .menu-contact {
-    display: none;
+    flex-direction: column;
+    justify-content: right;
+    gap: 12px;
   }
 }
 
@@ -821,6 +823,11 @@ img {
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 24px;
+}
+@media only screen and (max-width: 767.98px) {
+  .modal {
+    width: calc(100% - 36px);
+  }
 }
 .close-button {
   position: absolute;
