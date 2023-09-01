@@ -35,7 +35,6 @@ ul {
   padding: 112px 0;
   margin: 0 auto;
   max-width: 428px;
-  height: 432px;
   text-align: center;
 }
 @media screen and (min-width: 768px) and (max-width: 1157.98px) {
@@ -71,14 +70,17 @@ ul {
   text-transform: uppercase;
 }
 .logo-link {
+  display: inline-flex;
+  height: 24px;
+  align-items: center;
+  flex-shrink: 0;
+  color: #4d5ae5;
   font-family: "Raleway", sans-serif;
-  font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
+  font-weight: 800;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
-  margin-right: 76px;
 }
 .logo-down-name {
   font-family: "Raleway", sans-serif;
@@ -137,17 +139,18 @@ ul {
 @media only screen and (min-width: 1158px) {
   .valuables-list {
     display: flex;
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 
 .valuables-descr {
-  width: 264px;
   color: var(--slate, #434455);
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-bottom: 72px;
 }
 @media only screen and (min-width: 1158px) {
   .valuables-descr {
@@ -334,6 +337,14 @@ address {
   margin: 0 auto 72px;
   font-weight: 700;
 }
+@media screen and (min-width: 768px) and (max-width: 1157.98px) {
+  .wrapper {
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    margin: 0 auto 48px;
+  }
+}
 .valuables {
   font-weight: 500;
   font-size: 20px;
@@ -403,6 +414,15 @@ address {
   background-color: #f4f4fd;
   min-height: 732px;
 }
+.section {
+  padding: 96px 0;
+}
+@media screen and (min-width: 1158px) {
+  .section {
+    padding: 120px 0;
+  }
+}
+
 .specialists {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -430,50 +450,48 @@ address {
 /* Phone screen */
 
 .container {
-  min-width: 320px;
   max-width: 428px;
-  padding: 0 16px;
-  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
 }
+
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
+
 .site-info {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .logo-line {
-  display: inline-flex;
-  height: 24px;
+  display: flex;
   align-items: center;
-  flex-shrink: 0;
-  color: #4d5ae5;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  line-height: 1.17;
-  font-weight: 800;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  flex-direction: row;
+  gap: 120px;
 }
 @media only screen and (min-width: 1158px) {
   .logo-line {
-    margin-right: 365px;
+    gap: 76px;
   }
 }
 .menu {
   display: flex;
   align-items: center;
   flex-direction: row;
-  gap: 120px;
+  gap: 40px;
 }
 @media (max-width: 767.98px) {
   .menu {
@@ -483,7 +501,7 @@ address {
 .menu-contact {
   display: flex;
   gap: 40px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 @media only screen and (min-width: 768px) and (max-width: 1157.98px) {
   .menu-contact {
@@ -650,10 +668,7 @@ img {
 .logotype {
   fill: #f4f4fd;
 }
-.customers {
-  margin-top: 96px;
-  padding-bottom: 72px;
-}
+
 .section-name {
   font-size: 36px;
   font-weight: 700;
@@ -720,7 +735,7 @@ img {
   flex-wrap: wrap;
   row-gap: 72px;
   align-items: center;
-  margin-right: 120px;
+  width: 584px;
 }
 .logo-contain {
   display: flex;
@@ -730,19 +745,28 @@ img {
 @media only screen and (min-width: 768px) {
   .foot-class {
     align-items: baseline;
-    padding: 0 92px;
+    width: 584px;
   }
+}
+
+.logo-contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social-media-class {
+  padding-left: 0;
+  margin-right: 80px;
+}
+.footer-bottom {
+  padding-left: 0;
+  justify-content: flex-start;
+}
+
+@media only screen and (min-width: 768px) {
   .logo-contain {
     display: block;
     margin-right: 24px;
-  }
-  .social-media-class {
-    padding-left: 0;
-    padding-right: 80px;
-  }
-  .footer-bottom {
-    padding-left: 0;
-    justify-content: flex-start;
   }
 }
 @media only screen and (min-width: 1158px) {
