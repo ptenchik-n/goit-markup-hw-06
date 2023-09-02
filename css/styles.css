@@ -37,6 +37,17 @@ ul {
   max-width: 428px;
   text-align: center;
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .title {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg-mob@2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1157.98px) {
   .title {
     max-width: 768px;
@@ -46,6 +57,17 @@ ul {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .title {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg-tab@2x.jpg);
   }
 }
 @media screen and (min-width: 1158px) {
@@ -743,12 +765,11 @@ img {
     max-width: 584px;
   }
 }
-@media only screen and (max-width: 1158px) {
+@media only screen and (min-width: 1158px) {
   .foot-class {
-    padding: 0 0;
+    width: 1158px;
   }
 }
-
 .social-media-class {
   padding-left: 0;
 }
@@ -1180,6 +1201,7 @@ img {
     gap: 16px;
   }
 }
+
 @media only screen and (min-width: 768px) {
   .footer-form-input {
     width: 264px;
