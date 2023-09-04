@@ -621,6 +621,7 @@ img {
 .portfolio-info {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .adress-info {
   display: flex;
@@ -662,6 +663,7 @@ img {
 .email-info {
   display: flex;
   gap: 40px;
+  flex-wrap: nowrap;
 }
 .social-networks {
   display: flex;
