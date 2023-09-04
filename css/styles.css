@@ -172,7 +172,6 @@ ul {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-bottom: 72px;
 }
 @media only screen and (min-width: 1158px) {
   .valuables-descr {
@@ -349,13 +348,12 @@ address {
   font-style: normal;
 }
 .wrapper {
-  font-size: 36px;
+  font-size: 56px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
-  max-width: 320px;
-  height: 120px;
+  max-width: 496px;
   margin: 0 auto 72px;
   font-weight: 700;
 }
@@ -572,7 +570,9 @@ img {
     padding: 120px 0;
   }
 }
-
+.list-item {
+  margin-bottom: 72px;
+}
 @media only screen and (min-width: 768px) {
   .card-set {
     display: flex;
@@ -767,7 +767,7 @@ img {
 }
 @media only screen and (min-width: 1158px) {
   .foot-class {
-    width: 1158px;
+    max-width: 1158px;
   }
 }
 .social-media-class {
